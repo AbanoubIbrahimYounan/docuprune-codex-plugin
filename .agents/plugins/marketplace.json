@@ -1,0 +1,20 @@
+{
+  "name": "docuprune",
+  "interface": {
+    "displayName": "DocuPrune"
+  },
+  "plugins": [
+    {
+      "name": "docuprune",
+      "source": {
+        "source": "local",
+        "path": "./plugins/docuprune"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DocuPrune"
+  short_description: "Convert files to Markdown"
+  default_prompt: "Use $docuprune to convert my chosen documents through the website, review the results and save Markdown locally."

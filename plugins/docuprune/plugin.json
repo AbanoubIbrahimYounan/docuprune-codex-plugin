@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "docuprune",
+  "version": "0.2.0",
+  "description": "Convert chosen documents through the DocuPrune website, review the results, and save Markdown or batch archives locally.",
+  "author": {
+    "name": "DocuPrune",
+    "email": "abanoubibrahim35@gmail.com",
+    "url": "https://docuprune.com"
+  },
+  "homepage": "https://docuprune.com/plugins/docuprune",
+  "keywords": ["documents", "markdown", "conversion", "browser", "docuprune"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "DocuPrune",
+        "shortDescription": "Convert files to Markdown",
+        "longDescription": "Convert chosen documents through the DocuPrune website in a compatible desktop browser session. Use public samples, review completed files and actual table structure, and save verified Markdown downloads or a batch ZIP. Conversion happens in the website's browser workspace. Content read or returned to the conversation is available to the assistant and its platform. Scans and complex layouts can need manual review. This package supplies workflow instructions and branding; it does not bundle a conversion engine or provide a remote conversion API.",
+        "developerName": "DocuPrune",
+        "category": "Productivity",
+        "capabilities": ["Interactive", "Read", "Write"],
+        "websiteURL": "https://docuprune.com/plugins/docuprune",
+        "supportURL": "https://docuprune.com/plugins/docuprune/support",
+        "privacyPolicyURL": "https://docuprune.com/plugins/docuprune/privacy",
+        "defaultPrompt": [
+          "Use DocuPrune to convert my chosen document and save Markdown locally.",
+          "Try a DocuPrune sample and verify its downloaded result.",
+          "Use DocuPrune to convert my chosen batch and save the ZIP."
+        ],
+        "brandColor": "#159e81",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      },
+      "publication": {
+        "release_notes": "Desktop browser workflow for chosen documents and public samples, with explicit result and download verification. No MCP server, hooks or bundled conversion engine.",
+        "translations": {
+          "ar": {
+            "subtitle": "حوّل ملفاتك إلى نص منسّق",
+            "description": "حوّل المستندات التي تختارها عبر الموقع في جلسة سطح مكتب تدعم التحكم في المتصفح. راجع الملفات المكتملة والأعمدة والأرقام قبل حفظ التنزيل الفعلي. تتم المعالجة داخل مساحة المتصفح، ويصبح المحتوى الذي يقرأه المساعد أو يعيده إلى المحادثة متاحًا له ولمنصته. قد تحتاج الصور والتخطيطات المعقدة إلى مراجعة يدوية. لا تتضمن الحزمة محرك التحويل أو خدمة لرفع المستندات."
+          }
+        }
+      }
+    }
+  }
+}
